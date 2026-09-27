@@ -28,31 +28,65 @@ background:#000000;
 
 color:#FFD700;
 
+padding:15px 40px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+flex-wrap:wrap;
+
 border-bottom:4px solid #FFD700;
 
 }
 
-    color:white;
 
-    padding:20px;
 
-    display:flex;
+header .logo{
 
-    justify-content:space-between;
+width:80px;
 
-    align-items:center;
+height:80px;
 
-    flex-wrap:wrap;
+object-fit:contain;
 
 }
+
 
 
 header h1{
 
-    font-size:28px;
+font-size:32px;
+
+color:#FFD700;
+
+margin-left:15px;
 
 }
 
+
+
+nav a{
+
+color:#FFFFFF;
+
+text-decoration:none;
+
+margin:0 12px;
+
+font-weight:bold;
+
+}
+
+
+
+nav a:hover{
+
+color:#FF0000;
+
+}
 
 
 nav a{
