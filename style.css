@@ -434,3 +434,15 @@ object-fit:contain;
 margin-right:15px;
 
 }
+a{
+
+transition:0.3s;
+
+}
+
+
+a:hover{
+
+color:#FFD700;
+
+}
