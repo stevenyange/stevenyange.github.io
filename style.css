@@ -446,3 +446,40 @@ a:hover{
 color:#FFD700;
 
 }
+@media(max-width:768px){
+
+.hero{
+
+padding:30px 20px;
+
+}
+
+.hero img{
+
+width:200px;
+
+height:200px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.card{
+
+width:100%;
+
+}
+
+nav a{
+
+display:block;
+
+margin:10px;
+
+}
+
+}
