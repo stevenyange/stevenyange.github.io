@@ -57,7 +57,16 @@ header h1{
 
 nav a{
 
-    color:white;
+color:#FFD700;
+
+}
+
+
+nav a:hover{
+
+color:#FF0000;
+
+}
 
     text-decoration:none;
 
@@ -92,18 +101,24 @@ nav a:hover{
 
     padding:50px;
 
-  background:
+  .hero{
+
+background:
+
 linear-gradient(
-rgba(18,53,91,0.75),
-rgba(31,122,140,0.75)
+rgba(0,0,0,0.75),
+rgba(139,0,0,0.75)
 ),
+
 url("images/hero.jpg");
 
 background-size:cover;
-background-position:center; 
 
-    color:white;
+background-position:center;
 
+color:white;
+
+}
     flex-wrap:wrap;
 
 }
@@ -166,7 +181,24 @@ background-position:center;
 
     padding:12px 25px;
 
-    background:#ffd166;
+   .button{
+
+background:#FFD700;
+
+color:#000000;
+
+border:2px solid #000000;
+
+}
+
+
+.button:hover{
+
+background:#C00000;
+
+color:white;
+
+}
 
     color:#333;
 
@@ -200,15 +232,9 @@ section{
 
 
 section h2{
-
-    font-size:32px;
-
-    margin-bottom:20px;
-
-    color:#12355b;
+color:#B8860B;
 
 }
-
 
 
 
@@ -228,7 +254,15 @@ section h2{
 
 .card{
 
-    background:white;
+   .card{
+
+background:#111111;
+
+color:white;
+
+border:1px solid #FFD700;
+
+}
 
     padding:30px;
 
@@ -285,7 +319,7 @@ section h2{
 
     font-size:40px;
 
-    color:#1f7a8c;
+color:#FFD700;
 
 }
 
@@ -294,7 +328,13 @@ section h2{
 
 footer{
 
-    background:#12355b;
+background:#000000;
+
+color:#FFD700;
+
+border-top:4px solid #8B0000;
+
+}
 
     color:white;
 
