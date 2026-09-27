@@ -86,11 +86,15 @@ nav a:hover{
 
     padding:50px;
 
-    background:linear-gradient(
-    135deg,
-    #12355b,
-    #1f7a8c
-    );
+  background:
+linear-gradient(
+rgba(18,53,91,0.75),
+rgba(31,122,140,0.75)
+),
+url("images/hero.jpg");
+
+background-size:cover;
+background-position:center; 
 
     color:white;
 
