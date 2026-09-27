@@ -24,7 +24,13 @@ body{
 
 header{
 
-    background:#12355b;
+background:#000000;
+
+color:#FFD700;
+
+border-bottom:4px solid #FFD700;
+
+}
 
     color:white;
 
