@@ -68,7 +68,7 @@ font-size:17px;
 
 
 
-/* HEADER */
+/* HEADER DESIGN */
 
 
 header{
@@ -101,7 +101,7 @@ display:flex;
 
 align-items:center;
 
-gap:15px;
+gap:20px;
 
 }
 
@@ -109,9 +109,9 @@ gap:15px;
 
 .logo{
 
-width:75px;
+width:80px;
 
-height:75px;
+height:80px;
 
 object-fit:contain;
 
@@ -119,17 +119,19 @@ object-fit:contain;
 
 
 
-.logo-area h1{
+.brand-text h1{
 
 font-size:32px;
+
+margin-bottom:5px;
 
 }
 
 
 
-.logo-area p{
+.brand-text p{
 
-color:white;
+color:#ffffff;
 
 font-size:14px;
 
@@ -142,9 +144,19 @@ font-size:14px;
 /* NAVIGATION */
 
 
-nav a{
+nav ul{
 
-margin-left:20px;
+display:flex;
+
+list-style:none;
+
+gap:25px;
+
+}
+
+
+
+nav ul li a{
 
 color:white;
 
@@ -156,7 +168,7 @@ transition:0.3s;
 
 
 
-nav a:hover{
+nav ul li a:hover{
 
 color:#D4AF37;
 
