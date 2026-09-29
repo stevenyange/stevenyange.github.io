@@ -739,3 +739,12 @@ max-width:900px;
 margin:auto;
 
 }
+/* ACTIVE NAVIGATION */
+
+nav a.active{
+
+color:#D4AF37;
+
+font-weight:bold;
+
+}
