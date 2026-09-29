@@ -690,3 +690,27 @@ color:#D4AF37;
 font-weight:bold;
 
 }
+/* WELCOME SECTION */
+
+
+.welcome{
+
+text-align:center;
+
+padding:60px 10%;
+
+line-height:1.8;
+
+}
+
+
+
+.welcome p{
+
+font-size:18px;
+
+max-width:900px;
+
+margin:auto;
+
+}
