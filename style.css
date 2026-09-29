@@ -511,6 +511,29 @@ padding:50px 20px;
 
 }
 
+/* PROJECT CARDS */
 
+
+.project-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.project-card .button{
+
+font-size:14px;
+
+padding:10px 20px;
 
 }
