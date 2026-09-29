@@ -161,3 +161,4 @@ opacity:1;
 transform:translateY(0);
 
 }
+document.getElementById("year").textContent = new Date().getFullYear();
