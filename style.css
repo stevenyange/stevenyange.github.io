@@ -1,50 +1,136 @@
-/* Steven Yange Website Version 2.0 */
+/* ===================================
+   Steven Yange Official Website
+   Version 3.0
+   Premium Portfolio Design
+=================================== */
+
+
+/* ===============================
+   GENERAL SETTINGS
+================================ */
 
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
 }
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
 
 
 body{
 
-    font-family: Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 
-    line-height:1.6;
+background:#121212;
 
-    color:#333;
+color:#f5f5f5;
 
-    background:#f8f9fa;
+line-height:1.6;
 
 }
 
 
 
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+
+
+a{
+
+text-decoration:none;
+
+color:#D4AF37;
+
+}
+
+
+
+section{
+
+padding:70px 8%;
+
+}
+
+
+
+h1,h2,h3{
+
+color:#D4AF37;
+
+}
+
+
+
+p{
+
+font-size:17px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   HEADER DESIGN
+================================ */
+
+
 header{
 
-background:#000000;
+background:#000;
 
-color:#FFD700;
+display:flex;
 
-padding:15px 40px;
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 8%;
+
+border-bottom:3px solid #D4AF37;
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+}
+
+
+
+.logo-area{
 
 display:flex;
 
 align-items:center;
 
-justify-content:space-between;
-
-flex-wrap:wrap;
-
-border-bottom:4px solid #FFD700;
+gap:20px;
 
 }
 
 
 
-header .logo{
+.logo{
 
 width:80px;
 
@@ -56,13 +142,40 @@ object-fit:contain;
 
 
 
-header h1{
+.brand-text h1{
 
 font-size:32px;
 
-color:#FFD700;
+}
 
-margin-left:15px;
+
+
+.brand-text p{
+
+color:white;
+
+font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:25px;
 
 }
 
@@ -70,72 +183,47 @@ margin-left:15px;
 
 nav a{
 
-color:#FFFFFF;
-
-text-decoration:none;
-
-margin:0 12px;
+color:white;
 
 font-weight:bold;
 
-}
-
-
-
-nav a:hover{
-
-color:#FF0000;
-
-}
-
-
-nav a{
-
-color:#FFD700;
-
-}
-
-
-nav a:hover{
-
-color:#FF0000;
-
-}
-
-    text-decoration:none;
-
-    margin:10px;
-
-    font-weight:bold;
+transition:0.3s;
 
 }
 
 
 
-nav a:hover{
+nav a:hover,
+nav a.active{
 
-    color:#ffd166;
+color:#D4AF37;
 
 }
 
 
+
+
+
+
+
+
+/* ===============================
+   HERO SECTION
+================================ */
 
 
 .hero{
 
-    min-height:90vh;
+min-height:90vh;
 
-    display:flex;
+display:flex;
 
-    justify-content:center;
+align-items:center;
 
-    align-items:center;
+justify-content:center;
 
-    gap:40px;
+text-align:center;
 
-    padding:50px;
-
-  .hero{
 
 background:
 
@@ -146,38 +234,36 @@ rgba(139,0,0,0.75)
 
 url("images/hero.jpg");
 
+
 background-size:cover;
 
 background-position:center;
 
-color:white;
-
-}
-    flex-wrap:wrap;
-
 }
 
 
 
-.hero img{
+.hero-overlay{
 
-    width:300px;
-
-    height:300px;
-
-    border-radius:50%;
-
-    object-fit:cover;
-
-    border:8px solid white;
+max-width:900px;
 
 }
 
 
 
-.hero-text{
+.profile-image{
 
-    max-width:600px;
+width:180px;
+
+height:180px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:5px solid #D4AF37;
+
+margin:0 auto 30px;
 
 }
 
@@ -185,7 +271,7 @@ color:white;
 
 .hero h2{
 
-    font-size:45px;
+font-size:45px;
 
 }
 
@@ -193,192 +279,446 @@ color:white;
 
 .hero h3{
 
-    margin:20px 0;
+color:white;
+
+margin:20px;
 
 }
 
 
 
-.hero p{
+.motto{
 
-    font-size:20px;
+color:#D4AF37;
+
+font-style:italic;
 
 }
 
+
+
+
+
+
+
+
+/* ===============================
+   BUTTONS
+================================ */
 
 
 .button{
 
-    display:inline-block;
+display:inline-block;
 
-    margin-top:20px;
+background:#D4AF37;
 
-    padding:12px 25px;
+color:#000;
 
-   .button{
+padding:14px 30px;
 
-background:#FFD700;
+border-radius:30px;
 
-color:#000000;
+margin:20px 10px;
 
-border:2px solid #000000;
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.3s;
 
 }
 
 
+
 .button:hover{
 
-background:#C00000;
+background:#8B0000;
 
 color:white;
 
 }
 
-    color:#333;
-
-    text-decoration:none;
-
-    border-radius:30px;
-
-    font-weight:bold;
-
-}
-
-
-
-.button:hover{
-
-    background:white;
-
-}
 
 
 
 
-section{
 
-    padding:60px 10%;
 
-    text-align:center;
+
+/* ===============================
+   SECTION TITLES
+================================ */
+
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:40px;
 
 }
 
 
 
-section h2{
-color:#B8860B;
 
-}
 
+
+
+
+/* ===============================
+   CARDS
+================================ */
 
 
 .cards{
 
-    display:flex;
+display:grid;
 
-    justify-content:center;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-    gap:30px;
-
-    flex-wrap:wrap;
+gap:30px;
 
 }
 
 
 
-.card{
+.card,
+.about-card,
+.stat-card{
 
-   .card{
+background:#1c1c1c;
 
-background:#111111;
+padding:30px;
 
-color:white;
+border-radius:15px;
 
-border:1px solid #FFD700;
+border:1px solid #D4AF37;
 
-}
-
-    padding:30px;
-
-    width:300px;
-
-    border-radius:15px;
-
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-
-    transition:0.3s;
+transition:0.3s;
 
 }
 
 
 
-.card:hover{
+.card:hover,
+.about-card:hover,
+.stat-card:hover{
 
-    transform:translateY(-10px);
+transform:translateY(-10px);
 
 }
 
 
+
+
+
+
+
+
+/* ===============================
+   PROJECT CARDS
+================================ */
+
+
+.project-card img{
+
+width:100%;
+
+height:200px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   STATISTICS
+================================ */
 
 
 .numbers{
 
-    display:flex;
+display:grid;
 
-    justify-content:center;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 
-    gap:40px;
+gap:25px;
 
-    flex-wrap:wrap;
-
-}
-
-
-
-.numbers div{
-
-    background:white;
-
-    padding:30px;
-
-    width:220px;
-
-    border-radius:15px;
+text-align:center;
 
 }
 
 
 
-.numbers h3{
+.stat-card h3{
 
-    font-size:40px;
-
-color:#FFD700;
+font-size:40px;
 
 }
 
 
+
+
+
+
+
+
+/* ===============================
+   GALLERY
+================================ */
+
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+
+
+.photo-card{
+
+background:#1c1c1c;
+
+border:1px solid #D4AF37;
+
+border-radius:15px;
+
+padding:20px;
+
+text-align:center;
+
+overflow:hidden;
+
+transition:0.4s;
+
+}
+
+
+
+.photo-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.photo-card img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+transition:transform 0.4s ease;
+
+}
+
+
+
+.photo-card img:hover{
+
+transform:scale(1.05);
+
+}
+
+
+
+.photo-card h3{
+
+margin-top:15px;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   BREADCRUMB
+================================ */
+
+
+.breadcrumb{
+
+background:#111;
+
+padding:15px 8%;
+
+border-bottom:1px solid #D4AF37;
+
+}
+
+
+
+.breadcrumb a{
+
+font-weight:bold;
+
+}
+
+
+
+.breadcrumb span{
+
+color:white;
+
+margin:0 8px;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   CONTACT PAGE
+================================ */
+
+
+.contact-intro{
+
+text-align:center;
+
+}
+
+
+
+.contact-card{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   WELCOME SECTION
+================================ */
+
+
+.welcome{
+
+text-align:center;
+
+padding:60px 10%;
+
+}
+
+
+
+.welcome p{
+
+max-width:900px;
+
+margin:auto;
+
+font-size:18px;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   MISSION STATEMENT
+================================ */
+
+
+.mission-statement{
+
+text-align:center;
+
+font-size:22px;
+
+font-style:italic;
+
+color:#D4AF37;
+
+padding:50px 10%;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   FOOTER
+================================ */
 
 
 footer{
 
-background:#000000;
+background:#000;
 
-color:#FFD700;
+text-align:center;
 
-border-top:4px solid #8B0000;
+padding:40px;
 
-}
-
-    color:white;
-
-    text-align:center;
-
-    padding:30px;
+border-top:3px solid #D4AF37;
 
 }
 
 
+
+.footer-logo{
+
+width:80px;
+
+margin:auto;
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   MOBILE RESPONSIVE DESIGN
+================================ */
 
 
 @media(max-width:768px){
@@ -386,137 +726,71 @@ border-top:4px solid #8B0000;
 
 header{
 
-    flex-direction:column;
+flex-direction:column;
 
 }
+
+
+.logo-area{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+.brand-text h1{
+
+font-size:26px;
+
+}
+
+
+
+nav ul{
+
+flex-direction:column;
+
+align-items:center;
+
+gap:10px;
+
+}
+
 
 
 .hero h2{
 
-    font-size:32px;
-
-}
-
-
-.hero{
-
-    text-align:center;
+font-size:30px;
 
 }
 
 
 
-.hero img{
+section{
 
-    width:220px;
-
-    height:220px;
+padding:50px 20px;
 
 }
 
 
-nav{
 
-    margin-top:20px;
+.gallery-grid{
 
-}
-
-
-}
-.logo{
-
-width:70px;
-
-height:70px;
-
-object-fit:contain;
-
-margin-right:15px;
-
-}
-a{
-
-transition:0.3s;
+padding:20px;
 
 }
 
 
-a:hover{
+.button{
 
-color:#FFD700;
+font-size:14px;
 
-}
-@media(max-width:768px){
-
-.hero{
-
-padding:30px 20px;
+padding:10px 20px;
 
 }
 
-.hero img{
 
-width:200px;
-
-height:200px;
-
-}
-
-.hero h2{
-
-font-size:28px;
-
-}
-
-.card{
-
-width:100%;
-
-}
-
-nav a{
-
-display:block;
-
-margin:10px;
-
-}
-
-}
-@media(max-width:768px){
-
-.hero{
-
-padding:30px 20px;
-
-}
-
-.hero img{
-
-width:200px;
-
-height:200px;
-
-}
-
-.hero h2{
-
-font-size:28px;
-
-}
-
-.card{
-
-width:100%;
-
-}
-
-nav a{
-
-display:block;
-
-margin:10px;
-
-}
 
 }
