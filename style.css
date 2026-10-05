@@ -1,3 +1,11 @@
+:root {
+    background: var(--gold);
+    background: var(--enga-green);
+    --dark-green: #064B2A;
+    color: var(--white);
+    --dark: #111111;
+}
+
 /* ===================================
    Steven Yange Official Website
    Version 3.0
@@ -94,26 +102,10 @@ font-size:17px;
 ================================ */
 
 
-header{
-
-background:#000;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:20px 8%;
-
-border-bottom:3px solid #D4AF37;
-
-position:sticky;
-
-top:0;
-
-z-index:1000;
-
+header {
+    background: var(--enga-green);
+    color: var(--white);
+    border-bottom: 5px solid var(--gold);
 }
 
 
@@ -181,14 +173,16 @@ gap:25px;
 
 
 
-nav a{
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
 
-color:white;
 
-font-weight:bold;
-
-transition:0.3s;
-
+nav a:hover,
+nav a.active {
+    color: var(--gold);
 }
 
 
@@ -211,87 +205,110 @@ color:#D4AF37;
    HERO SECTION
 ================================ */
 
+.hero {
 
-.hero{
+    min-height: 90vh;
 
-min-height:90vh;
+    display: flex;
 
-display:flex;
+    align-items: center;
 
-align-items:center;
+    justify-content: center;
 
-justify-content:center;
-
-text-align:center;
-
-
-background:
-
-linear-gradient(
-rgba(0,0,0,0.75),
-rgba(139,0,0,0.75)
-),
-
-url("images/hero.jpg");
+    text-align: center;
 
 
-background-size:cover;
+    background:
 
-background-position:center;
+    linear-gradient(
+        rgba(11,107,58,0.85),
+        rgba(0,0,0,0.75)
+    ),
 
-}
+    url("images/hero.jpg");
 
 
+    background-size: cover;
 
-.hero-overlay{
-
-max-width:900px;
+    background-position: center;
 
 }
 
 
 
-.profile-image{
+/* ===============================
+   HERO CONTENT
+================================ */
 
-width:180px;
+.hero-overlay {
 
-height:180px;
+    max-width: 900px;
 
-border-radius:50%;
-
-object-fit:cover;
-
-border:5px solid #D4AF37;
-
-margin:0 auto 30px;
+    margin: auto;
 
 }
 
 
 
-.hero h2{
+/* ===============================
+   PROFILE IMAGE
+================================ */
 
-font-size:45px;
+.profile-image {
+
+    width: 180px;
+
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid var(--gold);
+
+    margin: 0 auto 30px;
 
 }
 
 
 
-.hero h3{
+/* ===============================
+   HERO TITLE
+================================ */
 
-color:white;
+.hero h2 {
 
-margin:20px;
+    font-size: 45px;
+
+    color: var(--white);
 
 }
 
 
 
-.motto{
+/* ===============================
+   HERO SUBTITLE
+================================ */
 
-color:#D4AF37;
+.hero h3 {
 
-font-style:italic;
+    color: var(--white);
+
+    margin: 20px;
+
+}
+
+
+
+/* ===============================
+   MOTTO
+================================ */
+
+.motto {
+
+    color: var(--gold);
+
+    font-style: italic;
 
 }
 
@@ -307,35 +324,68 @@ font-style:italic;
 ================================ */
 
 
-.button{
+.button {
 
-display:inline-block;
+    display:inline-block;
 
-background:#D4AF37;
+    background:var(--gold);
 
-color:#000;
+    color:var(--dark);
 
-padding:14px 30px;
+    padding:12px 28px;
 
-border-radius:30px;
+    border-radius:30px;
 
-margin:20px 10px;
+    text-decoration:none;
 
-font-weight:bold;
+    font-weight:bold;
 
-cursor:pointer;
+    border:2px solid var(--gold);
 
-transition:0.3s;
+    transition:0.3s;
+
+    margin-top:15px;
 
 }
 
 
 
-.button:hover{
 
-background:#8B0000;
+.button:hover {
 
-color:white;
+    background:var(--enga-green);
+
+    color:var(--white);
+
+    border-color:var(--enga-green);
+
+    transform:translateY(-3px);
+
+}
+
+
+
+
+/* Secondary Button */
+
+.secondary-button {
+
+    background:transparent;
+
+    color:var(--gold);
+
+    border:2px solid var(--gold);
+
+}
+
+
+
+
+.secondary-button:hover {
+
+    background:var(--gold);
+
+    color:var(--dark);
 
 }
 
@@ -373,13 +423,14 @@ margin-bottom:40px;
 
 .cards{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
-gap:30px;
+    gap:30px;
 
 }
+
 
 
 
@@ -387,15 +438,17 @@ gap:30px;
 .about-card,
 .stat-card{
 
-background:#1c1c1c;
+    background:var(--white);
 
-padding:30px;
+    padding:30px;
 
-border-radius:15px;
+    border-radius:15px;
 
-border:1px solid #D4AF37;
+    border:2px solid var(--gold);
 
-transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s;
 
 }
 
@@ -405,12 +458,30 @@ transition:0.3s;
 .about-card:hover,
 .stat-card:hover{
 
-transform:translateY(-10px);
+    transform:translateY(-10px);
+
+    border-color:var(--enga-green);
 
 }
 
 
 
+
+.card h3{
+
+    color:var(--enga-green);
+
+}
+
+
+
+.card p{
+
+    color:var(--dark);
+
+    line-height:1.7;
+
+}
 
 
 
@@ -423,15 +494,15 @@ transform:translateY(-10px);
 
 .project-card img{
 
-width:100%;
+    width:100%;
 
-height:200px;
+    height:200px;
 
-object-fit:cover;
+    object-fit:cover;
 
-border-radius:10px;
+    border-radius:10px;
 
-margin-bottom:20px;
+    margin-bottom:20px;
 
 }
 
@@ -443,30 +514,110 @@ margin-bottom:20px;
 
 
 /* ===============================
-   STATISTICS
+   STATISTICS SECTION
 ================================ */
 
 
-.numbers{
+.stats {
 
-display:grid;
+    padding:60px 20px;
 
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    background:var(--enga-green);
 
-gap:25px;
-
-text-align:center;
+    text-align:center;
 
 }
 
 
 
-.stat-card h3{
+/* Section title */
 
-font-size:40px;
+.stats .section-title h2 {
+
+    color:var(--white);
+
+    border-bottom:3px solid var(--gold);
+
+    display:inline-block;
+
+    padding-bottom:10px;
 
 }
 
+
+
+
+/* Numbers container */
+
+.numbers {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+    gap:30px;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+
+
+
+/* Individual statistics */
+
+.numbers div {
+
+    background:var(--white);
+
+    padding:30px;
+
+    border-radius:15px;
+
+    border-top:5px solid var(--gold);
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+
+}
+
+
+
+
+.numbers div:hover {
+
+    transform:translateY(-10px);
+
+    border-top-color:var(--dark-green);
+
+}
+
+
+
+
+.numbers h3 {
+
+    font-size:45px;
+
+    color:var(--enga-green);
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+.numbers p {
+
+    color:var(--dark);
+
+    font-size:18px;
+
+}
 
 
 
@@ -597,28 +748,51 @@ margin:0 8px;
 
 
 /* ===============================
-   CONTACT PAGE
+   CONTACT PREVIEW SECTION
 ================================ */
 
 
-.contact-intro{
+.contact-preview {
 
-text-align:center;
+    padding:70px 20px;
 
-}
+    text-align:center;
 
+    background:var(--white);
 
-
-.contact-card{
-
-max-width:700px;
-
-margin:auto;
+    border-top:5px solid var(--gold);
 
 }
 
 
 
+/* Contact heading */
+
+.contact-preview .section-title h2 {
+
+    color:var(--enga-green);
+
+    font-size:35px;
+
+}
+
+
+
+/* Contact paragraph */
+
+.contact-preview p {
+
+    max-width:800px;
+
+    margin:20px auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--dark);
+
+}
 
 
 
@@ -629,26 +803,85 @@ margin:auto;
 ================================ */
 
 
-.welcome{
+.welcome {
 
-text-align:center;
+    padding:70px 20px;
 
-padding:60px 10%;
+    background:var(--enga-green);
+
+    color:var(--white);
+
+    text-align:center;
+
+}
+
+
+
+.welcome .section-title h2 {
+
+    color:var(--gold);
+
+    font-size:35px;
+
+    margin-bottom:30px;
 
 }
 
 
 
-.welcome p{
+.welcome p {
 
-max-width:900px;
+    max-width:900px;
 
-margin:auto;
+    margin:auto;
 
-font-size:18px;
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:var(--white);
 
 }
 
+
+/* ===============================
+   MISSION STATEMENT SECTION
+================================ */
+
+
+.mission-statement {
+
+    padding:50px 20px;
+
+    background:var(--gold);
+
+    color:var(--dark);
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-style:italic;
+
+    font-weight:bold;
+
+    border-top:5px solid var(--enga-green);
+
+    border-bottom:5px solid var(--enga-green);
+
+}
+
+
+
+.mission-statement p {
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
 
 
 
@@ -657,55 +890,69 @@ font-size:18px;
 
 
 /* ===============================
-   MISSION STATEMENT
+   FOOTER SECTION
 ================================ */
 
 
-.mission-statement{
+footer {
 
-text-align:center;
+    background:var(--dark-green);
 
-font-size:22px;
+    color:var(--white);
 
-font-style:italic;
+    text-align:center;
 
-color:#D4AF37;
+    padding:40px 20px;
 
-padding:50px 10%;
+    border-top:5px solid var(--gold);
 
 }
 
 
 
+/* Footer logo */
 
+.footer-logo {
 
+    width:100px;
 
+    height:auto;
 
-
-/* ===============================
-   FOOTER
-================================ */
-
-
-footer{
-
-background:#000;
-
-text-align:center;
-
-padding:40px;
-
-border-top:3px solid #D4AF37;
+    margin-bottom:20px;
 
 }
 
 
 
-.footer-logo{
+/* Footer text */
 
-width:80px;
+footer p {
 
-margin:auto;
+    margin:10px 0;
+
+    font-size:16px;
+
+}
+
+
+
+/* Footer links */
+
+footer a {
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+
+
+footer a:hover {
+
+    color:var(--white);
 
 }
 
