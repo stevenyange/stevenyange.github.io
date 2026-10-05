@@ -887,8 +887,6 @@ margin:0 8px;
 
 
 
-
-
 /* ===============================
    FOOTER SECTION
 ================================ */
@@ -909,8 +907,7 @@ footer {
 }
 
 
-
-/* Footer logo */
+/* Footer Logo */
 
 .footer-logo {
 
@@ -924,7 +921,7 @@ footer {
 
 
 
-/* Footer text */
+/* Footer Text */
 
 footer p {
 
@@ -936,7 +933,7 @@ footer p {
 
 
 
-/* Footer links */
+/* Footer Link */
 
 footer a {
 
@@ -955,8 +952,6 @@ footer a:hover {
     color:var(--white);
 
 }
-
-
 
 
 
